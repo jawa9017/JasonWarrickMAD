@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Reader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCO-s8-8db">
+                                <rect key="frame" x="126" y="84" width="162" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slaughterhouse5" translatesAutoresizingMaskIntoConstraints="NO" id="oIH-GX-1wN">
+                                <rect key="frame" x="150" y="361" width="114" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="233" id="TDC-bl-xvl"/>
+                                    <constraint firstAttribute="width" secondItem="oIH-GX-1wN" secondAttribute="height" multiplier="153:233" id="ghp-Gz-skq"/>
+                                    <constraint firstAttribute="width" secondItem="oIH-GX-1wN" secondAttribute="height" multiplier="153:233" id="jhE-et-jcS"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="153" id="zAR-m4-vG0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunri" translatesAutoresizingMaskIntoConstraints="NO" id="Wjr-t1-u7o">
+                                <rect key="frame" x="150" y="535" width="114" height="173.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wjr-t1-u7o" secondAttribute="height" multiplier="153:233" id="LBp-bT-RzU"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="233" id="QFg-hw-LXk"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="153" id="l9P-sd-mef"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greatGasby" translatesAutoresizingMaskIntoConstraints="NO" id="tmG-a5-JaI">
+                                <rect key="frame" x="150" y="187.5" width="114" height="173.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="153" id="bQ9-EQ-vfL"/>
+                                    <constraint firstAttribute="width" secondItem="tmG-a5-JaI" secondAttribute="height" multiplier="153:233" id="hwL-QY-keW"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="233" id="xf0-E0-vVx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oIH-GX-1wN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="37D-Rm-RKI"/>
+                            <constraint firstItem="oIH-GX-1wN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4PM-q7-plP"/>
+                            <constraint firstItem="rCO-s8-8db" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5UG-j5-dBz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tmG-a5-JaI" secondAttribute="trailing" constant="150" id="7F3-Ut-jap"/>
+                            <constraint firstItem="oIH-GX-1wN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="KUR-8A-mpe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oIH-GX-1wN" secondAttribute="trailing" constant="150" id="PeA-iQ-Gej"/>
+                            <constraint firstItem="oIH-GX-1wN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bRm-vG-e61"/>
+                            <constraint firstItem="Wjr-t1-u7o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="guD-wB-EeH"/>
+                            <constraint firstItem="oIH-GX-1wN" firstAttribute="top" secondItem="tmG-a5-JaI" secondAttribute="bottom" id="iii-Nb-JUZ"/>
+                            <constraint firstItem="Wjr-t1-u7o" firstAttribute="top" secondItem="oIH-GX-1wN" secondAttribute="bottom" id="l0i-Br-tF2"/>
+                            <constraint firstItem="tmG-a5-JaI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="r8H-f3-Rs3"/>
+                            <constraint firstItem="rCO-s8-8db" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="tAN-LT-Y07"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wjr-t1-u7o" secondAttribute="trailing" constant="150" id="udw-eh-R7I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="greatGasby" width="459" height="700"/>
+        <image name="slaughterhouse5" width="459" height="700"/>
+        <image name="sunri" width="459" height="700"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

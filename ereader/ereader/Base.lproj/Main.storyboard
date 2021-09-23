@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ereader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Reader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uC-Xg-kL2">
+                                <rect key="frame" x="97" y="49" width="220" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="zNQ-Vb-ZuE">
+                                <rect key="frame" x="100" y="118" width="214" height="326.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="700" id="1CS-fT-d2q"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="459" id="6CJ-QP-eNI"/>
+                                    <constraint firstAttribute="width" secondItem="zNQ-Vb-ZuE" secondAttribute="height" multiplier="459:700" id="xfh-B0-5FC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your book will be read here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9T-ku-ElB">
+                                <rect key="frame" x="20" y="459.5" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="lD7-TR-bzw">
+                                <rect key="frame" x="113" y="492.5" width="188" height="32"/>
+                                <segments>
+                                    <segment title="Book 1"/>
+                                    <segment title="Book 2"/>
+                                    <segment title="Book 3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeBook:" destination="BYZ-38-t0r" eventType="valueChanged" id="0li-49-CsG"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-0W-GDX">
+                                <rect key="frame" x="92" y="538.5" width="230" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitalization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0x8-V6-0RS">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bsb-J7-ngH">
+                                        <rect key="frame" x="181" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="updateCaps:" destination="BYZ-38-t0r" eventType="valueChanged" id="c3t-6Z-uBa"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ila-sL-2uE">
+                                <rect key="frame" x="183.5" y="584.5" width="47.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="e9b-ax-uNP">
+                                <rect key="frame" x="38" y="613.5" width="338" height="31"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="kgi-68-c4W"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e9b-ax-uNP" firstAttribute="top" secondItem="Ila-sL-2uE" secondAttribute="bottom" constant="5" id="2eL-Y6-RSC"/>
+                            <constraint firstItem="zNQ-Vb-ZuE" firstAttribute="top" secondItem="1uC-Xg-kL2" secondAttribute="bottom" constant="15" id="5I0-gV-h0p"/>
+                            <constraint firstItem="zNQ-Vb-ZuE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EPb-MG-nPG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k9T-ku-ElB" secondAttribute="trailing" constant="20" id="F0O-Xr-dX6"/>
+                            <constraint firstItem="tbh-0W-GDX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ggv-kK-O7b"/>
+                            <constraint firstItem="k9T-ku-ElB" firstAttribute="top" secondItem="zNQ-Vb-ZuE" secondAttribute="bottom" constant="15" id="KuN-2T-51U"/>
+                            <constraint firstItem="Ila-sL-2uE" firstAttribute="top" secondItem="tbh-0W-GDX" secondAttribute="bottom" constant="15" id="MIP-Dh-s3J"/>
+                            <constraint firstAttribute="trailing" secondItem="zNQ-Vb-ZuE" secondAttribute="trailing" constant="100" id="NSV-UA-uag"/>
+                            <constraint firstItem="1uC-Xg-kL2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="Sqr-Pm-BQi"/>
+                            <constraint firstItem="lD7-TR-bzw" firstAttribute="top" secondItem="k9T-ku-ElB" secondAttribute="bottom" constant="15" id="Wa1-aN-Rcv"/>
+                            <constraint firstItem="lD7-TR-bzw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpr-gr-nvI"/>
+                            <constraint firstItem="tbh-0W-GDX" firstAttribute="top" secondItem="lD7-TR-bzw" secondAttribute="bottom" constant="15" id="kvf-7j-UFJ"/>
+                            <constraint firstItem="Ila-sL-2uE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mOe-FS-2Qp"/>
+                            <constraint firstItem="k9T-ku-ElB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oVi-5W-dmK"/>
+                            <constraint firstItem="1uC-Xg-kL2" firstAttribute="centerX" secondItem="zNQ-Vb-ZuE" secondAttribute="centerX" id="rZs-c5-EqS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e9b-ax-uNP" secondAttribute="trailing" constant="40" id="siX-LE-IWh"/>
+                            <constraint firstItem="1uC-Xg-kL2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="tEn-Z7-FsG"/>
+                            <constraint firstItem="e9b-ax-uNP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uje-oa-MUt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookControl" destination="lD7-TR-bzw" id="r9P-am-1PQ"/>
+                        <outlet property="bookImage" destination="zNQ-Vb-ZuE" id="0lS-IQ-wd9"/>
+                        <outlet property="bookText" destination="k9T-ku-ElB" id="A7n-lw-hzP"/>
+                        <outlet property="capsControl" destination="bsb-J7-ngH" id="poP-Yf-NCb"/>
+                        <outlet property="fontColorLabel" destination="Ila-sL-2uE" id="qVD-zp-SWM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blank" width="459" height="700"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
