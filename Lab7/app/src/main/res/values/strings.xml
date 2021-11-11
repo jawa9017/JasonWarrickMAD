@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="header">Ticket Price Calculator</string>
+    <string name="matinee">Matinee Price</string>
+    <string name="full">Full Price</string>
+    <string name="calc">Calculate</string>
+    <string name="popcorn">Popcorn</string>
+    <string name="drink">Drink</string>
+    <string name="candy">Candy</string>
+    <string-array name="quant">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
